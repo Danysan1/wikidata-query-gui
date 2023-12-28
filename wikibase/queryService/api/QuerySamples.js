@@ -113,7 +113,7 @@ wikibase.queryService.api.QuerySamples = ( function ( $ ) {
 
 			if ( data.parts && data.parts[0].template ) {
 				templateHref = data.parts[0].template.target.href;
-				if ( templateHref === './Template:SPARQL' || templateHref === './Template:SPARQL2' ) {
+				if ( templateHref === './Template:Sophox' || templateHref === './Template:SPARQL' || templateHref === './Template:SPARQL2' ) {
 					// SPARQL/SPARQL2 template
 					query = data.parts[0].template.params.query.wt;
 				} else {
@@ -181,7 +181,7 @@ return class extends SuperClass {
     super(lang);
     this._apiServer = 'https://wiki.openstreetmap.org/';
     this._apiEndpoint = this._apiServer + 'w/api.php';
-    this._pageTitle = encodeURIComponent('SPARQL_examples');
+    this._pageTitle = encodeURIComponent('Sophox/Example_queries/Raw');
     this._pageUrl = this._apiServer + 'wiki/' + this._pageTitle;
   }
 
